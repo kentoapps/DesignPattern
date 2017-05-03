@@ -1,4 +1,5 @@
 import java.io.FileInputStream;
+import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.Properties;
@@ -22,16 +23,17 @@ public class FileProperties implements FileIO {
 
     @Override
     public void writeToFile(String filename) throws IOException {
-
+        FileOutputStream os = new FileOutputStream(filename);
+        properties.store(os, "From FileProperties");
     }
 
     @Override
     public void setValue(String key, String value) {
-
+        properties.setProperty(key, value);
     }
 
     @Override
     public String getValue(String key) {
-        return null;
+        return properties.getProperty(key);
     }
 }
