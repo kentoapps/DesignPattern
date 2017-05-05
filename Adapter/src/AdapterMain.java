@@ -3,7 +3,7 @@ import java.io.IOException;
 /**
  * Created by kento on 2017/05/02.
  */
-public class Main {
+public class AdapterMain {
     public static void main(String[] args) {
         FileIO f = new FileProperties();
         try {

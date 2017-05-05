@@ -1,7 +1,7 @@
 /**
  * Created by kento on 2017/05/01.
  */
-public class Main {
+public class IteratorMain {
     public static void main(String[] args) {
         BookShelf bookShelf = new BookShelf();
         bookShelf.appendBook(new Book("Ants"));
